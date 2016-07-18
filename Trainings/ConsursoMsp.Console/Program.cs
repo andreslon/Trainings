@@ -19,19 +19,33 @@ namespace ConsursoMsp.Console
             {
                 ChromeOptions options = new ChromeOptions();
                 options.AddArguments("--incognito", "--ignore-certificate-errors");
+                IWebDriver driver = new ChromeDriver(@"C:\Trainings\exc", options);
+                try
+                {
+                    driver.Navigate().GoToUrl("https://channel9.msdn.com/Blogs/MVP-Azure/Despliege-e-integracin-contnua-en-Azure");
+                    IWebElement playElement = driver.FindElement(By.ClassName("playButtonImage"));
+                    playElement.Click();
 
+                    Thread.Sleep(1800000);
+                    //Thread.Sleep(5000);
+                    driver.Close();
 
-                IWebDriver driver = new ChromeDriver(@"D:\Repos\Trainings\exc", options);
-                driver.Navigate().GoToUrl("https://channel9.msdn.com/Blogs/MVP-Azure/Despliege-e-integracin-contnua-en-Azure ");
-                IWebElement playElement = driver.FindElement(By.ClassName("playButtonImage"));
-                playElement.Click();
-
-                Thread.Sleep(1200000);
-                //Thread.Sleep(5000);
-                driver.Close();
+                }
+                catch (Exception)
+                {
+                    try
+                    {
+                        driver.Close();
+                    }
+                    catch (Exception)
+                    {
+                         
+                    }
+                }
+                
             }
-           
-             
+
+
         }
     }
 }
