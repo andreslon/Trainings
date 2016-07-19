@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED8D4D35-D88A-4B88-8D99-BF0F73BBE89B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pokedex.AngularJs</RootNamespace>
+    <AssemblyName>Pokedex.AngularJs</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="package.json" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="public\pokemons.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Gruntfile.js" />
+    <Content Include="public\css\bootstrap-theme.min.css" />
+    <Content Include="public\css\bootstrap.min.css" />
+    <Content Include="public\css\main.css" />
+    <Content Include="public\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="public\img\logo.png" />
+    <Content Include="public\img\pokemons\abra.jpg" />
+    <Content Include="public\img\pokemons\aerodactyl.jpg" />
+    <Content Include="public\img\pokemons\alakazam.jpg" />
+    <Content Include="public\img\pokemons\arbok.jpg" />
+    <Content Include="public\img\pokemons\arcanine.jpg" />
+    <Content Include="public\img\pokemons\articuno.jpg" />
+    <Content Include="public\img\pokemons\beedrill.jpg" />
+    <Content Include="public\img\pokemons\bellsprout.jpg" />
+    <Content Include="public\img\pokemons\blastoise.jpg" />
+    <Content Include="public\img\pokemons\bulbasaur.jpg" />
+    <Content Include="public\img\pokemons\butterfree.jpg" />
+    <Content Include="public\img\pokemons\caterpie.jpg" />
+    <Content Include="public\img\pokemons\chansey.jpg" />
+    <Content Include="public\img\pokemons\charizard.jpg" />
+    <Content Include="public\img\pokemons\charmander.jpg" />
+    <Content Include="public\img\pokemons\charmeleon.jpg" />
+    <Content Include="public\img\pokemons\clefable.jpg" />
+    <Content Include="public\img\pokemons\clefairy.jpg" />
+    <Content Include="public\img\pokemons\cloyster.jpg" />
+    <Content Include="public\img\pokemons\cubone.jpg" />
+    <Content Include="public\img\pokemons\dewgong.jpg" />
+    <Content Include="public\img\pokemons\diglett.jpg" />
+    <Content Include="public\img\pokemons\ditto.jpg" />
+    <Content Include="public\img\pokemons\dodrio.jpg" />
+    <Content Include="public\img\pokemons\doduo.jpg" />
+    <Content Include="public\img\pokemons\dragonair.jpg" />
+    <Content Include="public\img\pokemons\dragonite.jpg" />
+    <Content Include="public\img\pokemons\dratini.jpg" />
+    <Content Include="public\img\pokemons\drowzee.jpg" />
+    <Content Include="public\img\pokemons\dugtrio.jpg" />
+    <Content Include="public\img\pokemons\eevee.jpg" />
+    <Content Include="public\img\pokemons\ekans.jpg" />
+    <Content Include="public\img\pokemons\electabuzz.jpg" />
+    <Content Include="public\img\pokemons\electrode.jpg" />
+    <Content Include="public\img\pokemons\exeggcute.jpg" />
+    <Content Include="public\img\pokemons\exeggutor.jpg" />
+    <Content Include="public\img\pokemons\farfetchd.jpg" />
+    <Content Include="public\img\pokemons\fearow.jpg" />
+    <Content Include="public\img\pokemons\flareon.jpg" />
+    <Content Include="public\img\pokemons\gastly.jpg" />
+    <Content Include="public\img\pokemons\gengar.jpg" />
+    <Content Include="public\img\pokemons\geodude.jpg" />
+    <Content Include="public\img\pokemons\gloom.jpg" />
+    <Content Include="public\img\pokemons\golbat.jpg" />
+    <Content Include="public\img\pokemons\goldeen.jpg" />
+    <Content Include="public\img\pokemons\golduck.jpg" />
+    <Content Include="public\img\pokemons\golem.jpg" />
+    <Content Include="public\img\pokemons\graveler.jpg" />
+    <Content Include="public\img\pokemons\grimer.jpg" />
+    <Content Include="public\img\pokemons\growlithe.jpg" />
+    <Content Include="public\img\pokemons\gyarados.jpg" />
+    <Content Include="public\img\pokemons\haunter.jpg" />
+    <Content Include="public\img\pokemons\hitmonchan.jpg" />
+    <Content Include="public\img\pokemons\hitmonlee.jpg" />
+    <Content Include="public\img\pokemons\horsea.jpg" />
+    <Content Include="public\img\pokemons\hypno.jpg" />
+    <Content Include="public\img\pokemons\ivysaur.jpg" />
+    <Content Include="public\img\pokemons\jigglypuff.jpg" />
+    <Content Include="public\img\pokemons\jolteon.jpg" />
+    <Content Include="public\img\pokemons\jynx.jpg" />
+    <Content Include="public\img\pokemons\kabuto.jpg" />
+    <Content Include="public\img\pokemons\kabutops.jpg" />
+    <Content Include="public\img\pokemons\kadabra.jpg" />
+    <Content Include="public\img\pokemons\kakuna.jpg" />
+    <Content Include="public\img\pokemons\kangaskhan.jpg" />
+    <Content Include="public\img\pokemons\kingler.jpg" />
+    <Content Include="public\img\pokemons\koffing.jpg" />
+    <Content Include="public\img\pokemons\krabby.jpg" />
+    <Content Include="public\img\pokemons\lapras.jpg" />
+    <Content Include="public\img\pokemons\lickitung.jpg" />
+    <Content Include="public\img\pokemons\machamp.jpg" />
+    <Content Include="public\img\pokemons\machoke.jpg" />
+    <Content Include="public\img\pokemons\machop.jpg" />
+    <Content Include="public\img\pokemons\magikarp.jpg" />
+    <Content Include="public\img\pokemons\magmar.jpg" />
+    <Content Include="public\img\pokemons\magnemite.jpg" />
+    <Content Include="public\img\pokemons\magneton.jpg" />
+    <Content Include="public\img\pokemons\mankey.jpg" />
+    <Content Include="public\img\pokemons\marowak.jpg" />
+    <Content Include="public\img\pokemons\meowth.jpg" />
+    <Content Include="public\img\pokemons\metapod.jpg" />
+    <Content Include="public\img\pokemons\mew.jpg" />
+    <Content Include="public\img\pokemons\mewtwo.jpg" />
+    <Content Include="public\img\pokemons\moltres.jpg" />
+    <Content Include="public\img\pokemons\mrmime.jpg" />
+    <Content Include="public\img\pokemons\muk.jpg" />
+    <Content Include="public\img\pokemons\nidoking.jpg" />
+    <Content Include="public\img\pokemons\nidoqueen.jpg" />
+    <Content Include="public\img\pokemons\nidoranf.jpg" />
+    <Content Include="public\img\pokemons\nidoranm.jpg" />
+    <Content Include="public\img\pokemons\nidorina.jpg" />
+    <Content Include="public\img\pokemons\nidorino.jpg" />
+    <Content Include="public\img\pokemons\ninetales.jpg" />
+    <Content Include="public\img\pokemons\oddish.jpg" />
+    <Content Include="public\img\pokemons\omanyte.jpg" />
+    <Content Include="public\img\pokemons\omastar.jpg" />
+    <Content Include="public\img\pokemons\onix.jpg" />
+    <Content Include="public\img\pokemons\paras.jpg" />
+    <Content Include="public\img\pokemons\parasect.jpg" />
+    <Content Include="public\img\pokemons\persian.jpg" />
+    <Content Include="public\img\pokemons\pidgeot.jpg" />
+    <Content Include="public\img\pokemons\pidgeotto.jpg" />
+    <Content Include="public\img\pokemons\pidgey.jpg" />
+    <Content Include="public\img\pokemons\pikachu.jpg" />
+    <Content Include="public\img\pokemons\pinsir.jpg" />
+    <Content Include="public\img\pokemons\poliwag.jpg" />
+    <Content Include="public\img\pokemons\poliwhirl.jpg" />
+    <Content Include="public\img\pokemons\poliwrath.jpg" />
+    <Content Include="public\img\pokemons\ponyta.jpg" />
+    <Content Include="public\img\pokemons\porygon.jpg" />
+    <Content Include="public\img\pokemons\primeape.jpg" />
+    <Content Include="public\img\pokemons\psyduck.jpg" />
+    <Content Include="public\img\pokemons\raichu.jpg" />
+    <Content Include="public\img\pokemons\rapidash.jpg" />
+    <Content Include="public\img\pokemons\raticate.jpg" />
+    <Content Include="public\img\pokemons\rattata.jpg" />
+    <Content Include="public\img\pokemons\rhydon.jpg" />
+    <Content Include="public\img\pokemons\rhyhorn.jpg" />
+    <Content Include="public\img\pokemons\sandshrew.jpg" />
+    <Content Include="public\img\pokemons\sandslash.jpg" />
+    <Content Include="public\img\pokemons\scyther.jpg" />
+    <Content Include="public\img\pokemons\seadra.jpg" />
+    <Content Include="public\img\pokemons\seaking.jpg" />
+    <Content Include="public\img\pokemons\seel.jpg" />
+    <Content Include="public\img\pokemons\shellder.jpg" />
+    <Content Include="public\img\pokemons\slowbro.jpg" />
+    <Content Include="public\img\pokemons\slowpoke.jpg" />
+    <Content Include="public\img\pokemons\snorlax.jpg" />
+    <Content Include="public\img\pokemons\spearow.jpg" />
+    <Content Include="public\img\pokemons\squirtle.jpg" />
+    <Content Include="public\img\pokemons\starmie.jpg" />
+    <Content Include="public\img\pokemons\staryu.jpg" />
+    <Content Include="public\img\pokemons\tangela.jpg" />
+    <Content Include="public\img\pokemons\tauros.jpg" />
+    <Content Include="public\img\pokemons\tentacool.jpg" />
+    <Content Include="public\img\pokemons\tentacruel.jpg" />
+    <Content Include="public\img\pokemons\vaporeon.jpg" />
+    <Content Include="public\img\pokemons\venomoth.jpg" />
+    <Content Include="public\img\pokemons\venonat.jpg" />
+    <Content Include="public\img\pokemons\venusaur.jpg" />
+    <Content Include="public\img\pokemons\victreebel.jpg" />
+    <Content Include="public\img\pokemons\vileplume.jpg" />
+    <Content Include="public\img\pokemons\voltorb.jpg" />
+    <Content Include="public\img\pokemons\vulpix.jpg" />
+    <Content Include="public\img\pokemons\wartortle.jpg" />
+    <Content Include="public\img\pokemons\weedle.jpg" />
+    <Content Include="public\img\pokemons\weepinbell.jpg" />
+    <Content Include="public\img\pokemons\weezing.jpg" />
+    <Content Include="public\img\pokemons\wigglytuff.jpg" />
+    <Content Include="public\img\pokemons\zapdos.jpg" />
+    <Content Include="public\img\pokemons\zubat.jpg" />
+    <Content Include="public\index.html" />
+    <Content Include="public\js\app.js" />
+    <Content Include="public\js\controllers.js" />
+    <Content Include="public\js\directives.js" />
+    <Content Include="public\js\filters.js" />
+    <Content Include="public\js\lib\angular-route.min.js" />
+    <Content Include="public\js\lib\angular.min.js" />
+    <Content Include="public\js\lib\underscore-min.js" />
+    <Content Include="public\js\services.js" />
+    <Content Include="public\partials\pokemon-comments.html" />
+    <Content Include="public\partials\pokemon-data.html" />
+    <Content Include="public\partials\pokemon-evolution.html" />
+    <Content Include="public\partials\pokemon-image.html" />
+    <Content Include="public\partials\pokemon-name.html" />
+    <Content Include="public\partials\pokemon-stats.html" />
+    <Content Include="public\partials\pokemon-type.html" />
+    <Content Include="public\views\pokedex.html" />
+    <Content Include="public\views\pokemon.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51011</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51011/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
