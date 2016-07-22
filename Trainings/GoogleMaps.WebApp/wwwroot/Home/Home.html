@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Draggable directions</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script>
+
+
+        function initMap() {
+            var chicago = { lat: 6.336966782499592, lng: -75.55727005004883 };
+            var indianapolis = { lat: 6.303696270812169, lng: -75.56877136230469 };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: chicago,
+                scrollwheel: true,
+                zoom: 7
+            });
+
+            google.maps.event.addListener(map, "rightclick", function (event) {
+                var lat = event.latLng.lat();
+                var lng = event.latLng.lng();
+                // populate yor box/field with lat, lng
+                //alert("Lat=" + lat + "; Lng=" + lng);
+
+                console.log("Lat=" + lat + "; Lng=" + lng);
+            });
+
+            var directionsDisplay = new google.maps.DirectionsRenderer({
+                map: map
+            });
+
+            // Set destination, origin and travel mode.
+            var request = {
+                destination: indianapolis,
+                origin: chicago,
+                travelMode: google.maps.TravelMode.DRIVING
+            };
+
+            // Pass the directions request to the directions service.
+            var directionsService = new google.maps.DirectionsService();
+            directionsService.route(request, function (response, status) {
+                if (status == google.maps.DirectionsStatus.OK) {
+                    // Display the route on the map.
+                    directionsDisplay.setDirections(response);
+                }
+            });
+        }
+
+
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClBJ8lvy-l_Cm1caXA_iZXKfKHcKVqk3s&signed_in=true&callback=initMap"
+            async defer></script>
+</body>
+</html>
