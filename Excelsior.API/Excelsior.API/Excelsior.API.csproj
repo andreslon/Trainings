@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net47</TargetFramework>
-    <UserSecretsId>aspnet-Excelsior.API-1796D2C9-B33A-4A07-AD42-5ADC84351CC4</UserSecretsId>
+    <UserSecretsId>aspnet-Excelsior.API-DEA5BB0A-25CA-4287-B9C6-09F40C809844</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,6 +16,12 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0-preview2-final" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Excelsior.Business\Excelsior.Business.csproj" />
+    <ProjectReference Include="..\Excelsior.Domain\Excelsior.Domain.csproj" />
+    <ProjectReference Include="..\Excelsior.Infrastructure\Excelsior.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
