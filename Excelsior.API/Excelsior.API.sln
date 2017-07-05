@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26621.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excelsior.API", "Excelsior.API\Excelsior.API.csproj", "{A47E784D-7E58-4A45-8A21-78CBF0E1919A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A47E784D-7E58-4A45-8A21-78CBF0E1919A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A47E784D-7E58-4A45-8A21-78CBF0E1919A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A47E784D-7E58-4A45-8A21-78CBF0E1919A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A47E784D-7E58-4A45-8A21-78CBF0E1919A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B50E9DA2-41B4-464F-B4AC-D41E07745BEF}
+	EndGlobalSection
+EndGlobal
