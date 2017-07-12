@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA14DEC1-C1F9-4620-8686-7106198BFCBE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Excelsior.Reports</RootNamespace>
+    <AssemblyName>Excelsior.Reports</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugAzureQA|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugAzureQA\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugAzureDemo|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugAzureDemo\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugAzureProd|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugAzureProd\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugAzureLocal|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugAzureLocal\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugAzureDev|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugAzureDev\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseAzureProd|AnyCPU' ">
+    <OutputPath>bin\ReleaseAzureDemo\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseAzureQA|AnyCPU' ">
+    <OutputPath>bin\ReleaseAzureDev\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Development|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Development\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PreclinicalReleaseAzureProd|AnyCPU'">
+    <OutputPath>bin\PreclinicalReleaseAzureProd\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PreclinicalReleaseAzureQA|AnyCPU'">
+    <OutputPath>bin\PreclinicalReleaseAzureQA\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PreclinicalDebugAzureQA|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\PreclinicalDebugAzureQA\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PreclinicalDebugAzureProd|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\PreclinicalDebugAzureProd\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PreclinicalReleaseAzureDemo|AnyCPU'">
+    <OutputPath>bin\PreclinicalReleaseAzureDemo\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseAzureDemo|AnyCPU'">
+    <OutputPath>bin\ReleaseAzureDemo\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Telerik.Reporting.11.1.17.503\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.OpenAccess, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Telerik.DataAccess.Core.2016.2.822.1\lib\net40\Telerik.OpenAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.35.Extensions, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Telerik.DataAccess.Core.2016.2.822.1\lib\net40\Telerik.OpenAccess.35.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.40.Extensions, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Telerik.DataAccess.Core.2016.2.822.1\lib\net40\Telerik.OpenAccess.40.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.OpenAccess.Runtime, Version=2016.2.822.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Telerik.DataAccess.Core.2016.2.822.1\lib\net40\Telerik.OpenAccess.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Reporting, Version=11.1.17.503, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Telerik.Reporting.11.1.17.503\lib\net40\Telerik.Reporting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Adomd, Version=11.1.17.503, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Telerik.Reporting.11.1.17.503\lib\net40\Telerik.Reporting.Adomd.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Cache.Database, Version=11.1.17.503, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Telerik.Reporting.11.1.17.503\lib\net40\Telerik.Reporting.Cache.Database.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Cache.StackExchangeRedis, Version=11.1.17.503, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Telerik.Reporting.11.1.17.503\lib\net40\Telerik.Reporting.Cache.StackExchangeRedis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Reporting.OpenXmlRendering, Version=11.1.17.503, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Telerik.Reporting.11.1.17.503\lib\net40\Telerik.Reporting.OpenXmlRendering.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Reporting.XpsRendering, Version=11.1.17.503, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Telerik.Reporting.11.1.17.503\lib\net40\Telerik.Reporting.XpsRendering.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Billing\BillingSeriesCheckIn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Billing\BillingSeriesCheckIn.designer.cs">
+      <DependentUpon>BillingSeriesCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billing\CertCompletedDetails.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Billing\CertCompletedDetails.designer.cs">
+      <DependentUpon>CertCompletedDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billing\CertificationCompleted.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Billing\CertificationCompleted.designer.cs">
+      <DependentUpon>CertificationCompleted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billing\SeriesCheckinCompleted.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Billing\SeriesCheckinCompleted.designer.cs">
+      <DependentUpon>SeriesCheckinCompleted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billing\SeriesGradingCompleted.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Billing\SeriesGradingCompleted.designer.cs">
+      <DependentUpon>SeriesGradingCompleted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Certificates\EquipmentCertificate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Certificates\EquipmentCertificate.Designer.cs">
+      <DependentUpon>EquipmentCertificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Certificates\EquipmentCertificationStatus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Certificates\EquipmentCertificationStatus.Designer.cs">
+      <DependentUpon>EquipmentCertificationStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Certificates\SiteCertificationStatus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Certificates\SiteCertificationStatus.designer.cs">
+      <DependentUpon>SiteCertificationStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Certificates\TechnicianCertificate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Certificates\TechnicianCertificate.Designer.cs">
+      <DependentUpon>TechnicianCertificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Certificates\TechnicianCertificationStatus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Certificates\TechnicianCertificationStatus.designer.cs">
+      <DependentUpon>TechnicianCertificationStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBook\DiscreteDataGraph.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBook\DiscreteDataGraph.Designer.cs">
+      <DependentUpon>DiscreteDataGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBook\DiscreteDataGraphByGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBook\DiscreteDataGraphByGroup.Designer.cs">
+      <DependentUpon>DiscreteDataGraphByGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBook\DiscreteDataReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBook\DiscreteDataReport.Designer.cs">
+      <DependentUpon>DiscreteDataReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBook\FALeakageReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBook\FALeakageReport.Designer.cs">
+      <DependentUpon>FALeakageReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBook\FundusImagingReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBook\FundusImagingReport.Designer.cs">
+      <DependentUpon>FundusImagingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBook\GenericReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBook\GenericReport.Designer.cs">
+      <DependentUpon>GenericReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBook\NCSMReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBook\NCSMReport.Designer.cs">
+      <DependentUpon>NCSMReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBook\OCTReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBook\OCTReport.Designer.cs">
+      <DependentUpon>OCTReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBook\OcularExamReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBook\OcularExamReport.Designer.cs">
+      <DependentUpon>OcularExamReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBook\OcularExamReportByGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBook\OcularExamReportByGroup.Designer.cs">
+      <DependentUpon>OcularExamReportByGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBook\OcularExamReportIndividual.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBook\OcularExamReportIndividual.Designer.cs">
+      <DependentUpon>OcularExamReportIndividual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBook\OEBarGraph.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataBook\OEBarGraph.Designer.cs">
+      <DependentUpon>OEBarGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradingSummary\EligibilityDetailReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GradingSummary\EligibilityDetailReport.Designer.cs">
+      <DependentUpon>EligibilityDetailReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradingSummary\GrdConfidence.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GradingSummary\GrdConfidence.Designer.cs">
+      <DependentUpon>GrdConfidence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradingSummary\GrdSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GradingSummary\GrdSummary.Designer.cs">
+      <DependentUpon>GrdSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradingSummary\SubjEligibility.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GradingSummary\SubjEligibility.Designer.cs">
+      <DependentUpon>SubjEligibility.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grading\GradingReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grading\GradingReport.Designer.cs">
+      <DependentUpon>GradingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imaging\KeyFramesReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Imaging\KeyFramesReport.Designer.cs">
+      <DependentUpon>KeyFramesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Performance\QueryReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Performance\QueryReport.Designer.cs">
+      <DependentUpon>QueryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Performance\RCEligibilityPerformance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Performance\RCEligibilityPerformance.Designer.cs">
+      <DependentUpon>RCEligibilityPerformance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Performance\RCPerformance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Performance\RCPerformance.Designer.cs">
+      <DependentUpon>RCPerformance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Performance\SitePerformance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Performance\SitePerformance.Designer.cs">
+      <DependentUpon>SitePerformance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Performance\TrialPerformanceReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Performance\TrialPerformanceReport.Designer.cs">
+      <DependentUpon>TrialPerformanceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Performance\TrialRecruitmentProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Performance\TrialRecruitmentProgress.Designer.cs">
+      <DependentUpon>TrialRecruitmentProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query\QueryPrint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Query\QueryPrint.Designer.cs">
+      <DependentUpon>QueryPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduling\ScheduledGradingForms.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Scheduling\ScheduledGradingForms.Designer.cs">
+      <DependentUpon>ScheduledGradingForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\TrialUserList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\TrialUserList.Designer.cs">
+      <DependentUpon>TrialUserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\User.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Statistics\User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Billing\BillingSeriesCheckIn.resx">
+      <DependentUpon>BillingSeriesCheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing\CertCompletedDetails.resx">
+      <DependentUpon>CertCompletedDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing\CertificationCompleted.resx">
+      <DependentUpon>CertificationCompleted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing\SeriesCheckinCompleted.resx">
+      <DependentUpon>SeriesCheckinCompleted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing\SeriesGradingCompleted.resx">
+      <DependentUpon>SeriesGradingCompleted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Certificates\EquipmentCertificate.resx">
+      <DependentUpon>EquipmentCertificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Certificates\EquipmentCertificationStatus.resx">
+      <DependentUpon>EquipmentCertificationStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Certificates\SiteCertificationStatus.resx">
+      <DependentUpon>SiteCertificationStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Certificates\TechnicianCertificate.resx">
+      <DependentUpon>TechnicianCertificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Certificates\TechnicianCertificationStatus.resx">
+      <DependentUpon>TechnicianCertificationStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBook\DiscreteDataGraph.resx">
+      <DependentUpon>DiscreteDataGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBook\DiscreteDataGraphByGroup.resx">
+      <DependentUpon>DiscreteDataGraphByGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBook\DiscreteDataReport.resx">
+      <DependentUpon>DiscreteDataReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBook\FALeakageReport.resx">
+      <DependentUpon>FALeakageReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBook\FundusImagingReport.resx">
+      <DependentUpon>FundusImagingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBook\GenericReport.resx">
+      <DependentUpon>GenericReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBook\NCSMReport.resx">
+      <DependentUpon>NCSMReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBook\OCTReport.resx">
+      <DependentUpon>OCTReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBook\OcularExamReport.resx">
+      <DependentUpon>OcularExamReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBook\OcularExamReportByGroup.resx">
+      <DependentUpon>OcularExamReportByGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBook\OcularExamReportIndividual.resx">
+      <DependentUpon>OcularExamReportIndividual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBook\OEBarGraph.resx">
+      <DependentUpon>OEBarGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradingSummary\EligibilityDetailReport.resx">
+      <DependentUpon>EligibilityDetailReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradingSummary\GrdConfidence.resx">
+      <DependentUpon>GrdConfidence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradingSummary\GrdSummary.resx">
+      <DependentUpon>GrdSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradingSummary\SubjEligibility.resx">
+      <DependentUpon>SubjEligibility.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grading\GradingReport.resx">
+      <DependentUpon>GradingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imaging\KeyFramesReport.resx">
+      <DependentUpon>KeyFramesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Performance\QueryReport.resx">
+      <DependentUpon>QueryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Performance\RCEligibilityPerformance.resx">
+      <DependentUpon>RCEligibilityPerformance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Performance\RCPerformance.resx">
+      <DependentUpon>RCPerformance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Performance\SitePerformance.resx">
+      <DependentUpon>SitePerformance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Performance\TrialPerformanceReport.resx">
+      <DependentUpon>TrialPerformanceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Performance\TrialRecruitmentProgress.resx">
+      <DependentUpon>TrialRecruitmentProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Query\QueryPrint.resx">
+      <DependentUpon>QueryPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scheduling\ScheduledGradingForms.resx">
+      <DependentUpon>ScheduledGradingForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\TrialUserList.resx">
+      <DependentUpon>TrialUserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics\User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Excelsior.Domain\Excelsior.Domain.csproj">
+      <Project>{7f31ba30-3eb4-4592-9e87-3f653f4f66b0}</Project>
+      <Name>Excelsior.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Excelsior.Infrastructure\Excelsior.Infrastructure.csproj">
+      <Project>{0b231fcb-f040-407d-97d9-38411cd223c6}</Project>
+      <Name>Excelsior.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

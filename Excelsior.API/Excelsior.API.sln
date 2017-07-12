@@ -13,7 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excelsior.Domain", "Excelsi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excelsior.Business", "Excelsior.Business\Excelsior.Business.csproj", "{1F97998C-6FBC-481B-9C67-59CC704EFD16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excelsior.API", "Excelsior.API\Excelsior.API.csproj", "{353D18E1-75F4-4478-B8A7-D41985EFCA45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excelsior.API", "Excelsior.API\Excelsior.API.csproj", "{353D18E1-75F4-4478-B8A7-D41985EFCA45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excelsior.Reports", "Excelsior.Reports\Excelsior.Reports.csproj", "{EA14DEC1-C1F9-4620-8686-7106198BFCBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -163,6 +165,38 @@ Global
 		{353D18E1-75F4-4478-B8A7-D41985EFCA45}.ReleaseAzureProd|Any CPU.Build.0 = Release|Any CPU
 		{353D18E1-75F4-4478-B8A7-D41985EFCA45}.ReleaseAzureQA|Any CPU.ActiveCfg = Release|Any CPU
 		{353D18E1-75F4-4478-B8A7-D41985EFCA45}.ReleaseAzureQA|Any CPU.Build.0 = Release|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.DebugAzureDemo|Any CPU.ActiveCfg = DebugAzureDemo|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.DebugAzureDemo|Any CPU.Build.0 = DebugAzureDemo|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.DebugAzureDev|Any CPU.ActiveCfg = DebugAzureDev|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.DebugAzureDev|Any CPU.Build.0 = DebugAzureDev|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.DebugAzureLocal|Any CPU.ActiveCfg = DebugAzureLocal|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.DebugAzureLocal|Any CPU.Build.0 = DebugAzureLocal|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.DebugAzureProd|Any CPU.ActiveCfg = DebugAzureProd|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.DebugAzureProd|Any CPU.Build.0 = DebugAzureProd|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.DebugAzureQA|Any CPU.ActiveCfg = DebugAzureQA|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.DebugAzureQA|Any CPU.Build.0 = DebugAzureQA|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.Development|Any CPU.ActiveCfg = Development|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.Development|Any CPU.Build.0 = Development|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.PreclinicalDebugAzureProd|Any CPU.ActiveCfg = PreclinicalDebugAzureProd|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.PreclinicalDebugAzureProd|Any CPU.Build.0 = PreclinicalDebugAzureProd|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.PreclinicalDebugAzureQA|Any CPU.ActiveCfg = PreclinicalDebugAzureQA|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.PreclinicalDebugAzureQA|Any CPU.Build.0 = PreclinicalDebugAzureQA|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.PreclinicalReleaseAzureDemo|Any CPU.ActiveCfg = PreclinicalReleaseAzureDemo|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.PreclinicalReleaseAzureDemo|Any CPU.Build.0 = PreclinicalReleaseAzureDemo|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.PreclinicalReleaseAzureProd|Any CPU.ActiveCfg = PreclinicalReleaseAzureProd|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.PreclinicalReleaseAzureProd|Any CPU.Build.0 = PreclinicalReleaseAzureProd|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.PreclinicalReleaseAzureQA|Any CPU.ActiveCfg = PreclinicalReleaseAzureQA|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.PreclinicalReleaseAzureQA|Any CPU.Build.0 = PreclinicalReleaseAzureQA|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.ReleaseAzureDemo|Any CPU.ActiveCfg = ReleaseAzureDemo|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.ReleaseAzureDemo|Any CPU.Build.0 = ReleaseAzureDemo|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.ReleaseAzureProd|Any CPU.ActiveCfg = ReleaseAzureProd|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.ReleaseAzureProd|Any CPU.Build.0 = ReleaseAzureProd|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.ReleaseAzureQA|Any CPU.ActiveCfg = ReleaseAzureQA|Any CPU
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE}.ReleaseAzureQA|Any CPU.Build.0 = ReleaseAzureQA|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -172,9 +206,10 @@ Global
 		{7F31BA30-3EB4-4592-9E87-3F653F4F66B0} = {8F5720F0-C5B0-4D66-B6C8-54517996CAA7}
 		{1F97998C-6FBC-481B-9C67-59CC704EFD16} = {8F5720F0-C5B0-4D66-B6C8-54517996CAA7}
 		{353D18E1-75F4-4478-B8A7-D41985EFCA45} = {8F5720F0-C5B0-4D66-B6C8-54517996CAA7}
+		{EA14DEC1-C1F9-4620-8686-7106198BFCBE} = {8F5720F0-C5B0-4D66-B6C8-54517996CAA7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45
 		SolutionGuid = {B50E9DA2-41B4-464F-B4AC-D41E07745BEF}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45
 	EndGlobalSection
 EndGlobal
